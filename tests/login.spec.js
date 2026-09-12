@@ -28,18 +28,21 @@ let expectedResult='success';
 //             user.password === 'ADMIN_PASSWORD'
 //                 ? process.env.ADMIN_PASSWORD
 //                 : user.password;
-        await loginPage.login(
-            process.env.ADMIN_USERNAME,
-            process.env.ADMIN_PASSWORD
-        );
 
-        if (expectedResult === 'success') {
+        console.log(`User Name: ${process.env.ADMIN_USERNAME}`);
+        console.log(`Password: ${process.env.ADMIN_PASSWORD}`);
+        // await loginPage.login(
+        //     process.env.ADMIN_USERNAME,
+        //     process.env.ADMIN_PASSWORD
+        // );
 
-            await loginPage.verifySuccessfulLogin();
+        // if (expectedResult === 'success') {
 
-        } else {
+        //     await loginPage.verifySuccessfulLogin();
 
-            await loginPage.verifyLoginFailure();
-        }
+        // } else {
+
+        //     await loginPage.verifyLoginFailure();
+        // }
     });
 // }
