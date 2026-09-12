@@ -15,7 +15,7 @@ import { getTestData } from '../utils/testDataReader.js';
 
 // for (const user of users) {
 
-    test(`Login - ${user.username}`, async ({ loginPage }) => {
+    test(`Login`, async ({ loginPage }) => {
 
         await loginPage.navigate();
 // const username =
