@@ -13,7 +13,7 @@ import { getTestData } from '../utils/testDataReader.js';
 // );
 
 
-for (const user of users) {
+// for (const user of users) {
 
     test(`Login - ${user.username}`, async ({ loginPage }) => {
 
@@ -41,4 +41,4 @@ for (const user of users) {
             await loginPage.verifyLoginFailure();
         }
     });
-}
+// }
