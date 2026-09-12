@@ -2,6 +2,7 @@ import path from 'path';
 import { test } from '../fixtures/login.fixture.js';
 // import { readCsv } from '../utils/csvReader.js';
 import { getTestData } from '../utils/testDataReader.js';
+let expectedResult='success';
 
 // const users = readCsv(
 //     path.resolve('test-data/users.csv')
@@ -32,7 +33,7 @@ import { getTestData } from '../utils/testDataReader.js';
             process.env.ADMIN_PASSWORD
         );
 
-        if (user.expectedResult === 'success') {
+        if (expectedResult === 'success') {
 
             await loginPage.verifySuccessfulLogin();
 
