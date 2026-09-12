@@ -7,10 +7,10 @@ import { getTestData } from '../utils/testDataReader.js';
 //     path.resolve('test-data/users.csv')
 // );
 
-const users = getTestData(
-    'json',
-    'users.json'
-);
+// const users = getTestData(
+//     'json',
+//     'users.json'
+// );
 
 
 for (const user of users) {
@@ -28,8 +28,8 @@ for (const user of users) {
 //                 ? process.env.ADMIN_PASSWORD
 //                 : user.password;
         await loginPage.login(
-            user.username,
-            user.password
+            process.env.ADMIN_USERNAME,
+            process.env.ADMIN_PASSWORD
         );
 
         if (user.expectedResult === 'success') {
