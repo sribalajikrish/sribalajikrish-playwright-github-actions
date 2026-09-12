@@ -18,15 +18,15 @@ for (const user of users) {
     test(`Login - ${user.username}`, async ({ loginPage }) => {
 
         await loginPage.navigate();
-const username =
-            user.username === 'ADMIN_USERNAME'
-                ? process.env.ADMIN_USERNAME
-                : user.username;
+// const username =
+//             user.username === 'ADMIN_USERNAME'
+//                 ? process.env.ADMIN_USERNAME
+//                 : user.username;
 
-        const password =
-            user.password === 'ADMIN_PASSWORD'
-                ? process.env.ADMIN_PASSWORD
-                : user.password;
+//         const password =
+//             user.password === 'ADMIN_PASSWORD'
+//                 ? process.env.ADMIN_PASSWORD
+//                 : user.password;
         await loginPage.login(
             user.username,
             user.password
