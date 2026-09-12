@@ -48,7 +48,7 @@ export default defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        headless: false,
+        headless: true,
         // Injects the cookies and tokens directly into the browser context
         // storageState: '.auth/user.json',
       },
@@ -56,24 +56,24 @@ export default defineConfig({
       // dependencies: ['setup'],
     },
 
-    {
-      name: 'firefox',
-      use: { 
-        ...devices['Desktop Firefox'],
-        storageState: '.auth/user.json',
-      },
-      // dependencies: ['setup'],
-    },
+  //   {
+  //     name: 'firefox',
+  //     use: { 
+  //       ...devices['Desktop Firefox'],
+  //       storageState: '.auth/user.json',
+  //     },
+  //     // dependencies: ['setup'],
+  //   },
 
-    {
-      name: 'webkit',
-      use: { 
-        ...devices['Desktop Safari'],
-        storageState: '.auth/user.json',
-      },
-      // dependencies: ['setup'],
-    },
-  ],
+  //   {
+  //     name: 'webkit',
+  //     use: { 
+  //       ...devices['Desktop Safari'],
+  //       storageState: '.auth/user.json',
+  //     },
+  //     // dependencies: ['setup'],
+  //   },
+  // ],
 
 
   /* Run your local dev server before starting the tests */
