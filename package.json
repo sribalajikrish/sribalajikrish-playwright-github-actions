@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "csv-parse": "^7.0.2",
+    "dotenv": "^17.4.2",
+    "node.js": "^0.0.1-security",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1"
+  },
+  "scripts": {}
+}
